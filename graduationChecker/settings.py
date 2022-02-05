@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-o=8@k(w7n%1d5_iynfy)7u#!3@yza4*%qk*3udu)o1nd&ysc3x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://unimakgraduatechecker.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['unimakgraduatechecker.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -129,6 +129,9 @@ MEDIA_URL = '/images/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+
 django_heroku.settings(locals())
