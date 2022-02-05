@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNIVERSITY OF MAKENI GRADUATION CHECKER</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}" /> -->
+    <link rel="stylesheet" href="{% static 'css1/main.css' %}" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+       
+      <section class="landing-pg">
+       
+      </section>
+    </header>
+
+    <!-- Search Bar -->
+    <section class="search-box-wrapper">
+      <h4 class="text">UNIVERSITY OF MAKENI GRADUATION CHECKER</h4>
+      <div class="search-box">
+        <form class="form-controls" action="{% url 'search' %}" method="GET">
+          <input name="query" type="text" placeholder="Search" />
+          <button type="submit" class="search-btn">Search</button>
+        </form>
+      </div>
+    </section>
+    <!-- End Search bar -->
+
+    <section class="feature-products">
+   
+    </section>
+   
+
+ 
+
+
+
+
+
+
+
+      
+    </section>
+
+    <section class="perform">
+      <div class="card">
+        <p>{{Graduated}}</p>
+        <h6>Graduated</h6>
+      </div>
+      <div class="card">
+        <p>{{Finance}}</p>
+        <h6>Finance</h6>
+      </div>
+      <div class="card">
+        <p>{{FinanceRegistry}}</p>
+        <h6>FinanceRegistry</h6>
+      </div>
+    </section>
+
+
+    <footer class="footer-wraper" >
+      <div class="footer-links">
+        <a href="#" class="link">Facebook</a>
+        <a href="#" class="link">Gmail</a>
+        <a href="#" class="link">Youtube</a>
+        <a href="#" class="link">Zoom</a>
+      </div>
+      <div class="copyright">
+        <p>&copy;2022 UniMak | Powered by</p>
+        <p>
+          <a href="#" target="_blank" style="color: #cc3">University of Makeni</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+{% load static %}
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css1/main.css' %}"  />
+  </head>
+  <body>
+    <div class="s003">
+      
+      <form class="form-controls"  action="{% url 'search' %}" method="GET">
+        <p style="text-align: center; color: rgb(255, 255, 255);">UNIVERSITY OF MAKENI GRADUATION CHECKER</p>
+        <br><br>
+        <div class="inner-form">
+          <div class="input-field second-wrap">
+            <input name="query" type="text" placeholder="Enter your ID, Name to confirm your gradaution status" />
+          </div>
+          <div class="input-field third-wrap">
+            <button class="btn-search" type="submit">Search</button>            
+          </div>
+        </div>
+        <br>
+        <P style="text-align: center; color: rgb(255, 255, 255);">Check to confirm your gradaution status</P>
+      </form>
+    </div>
+    <script src="js/extention/choices.js"></script>
+    <script>
+      const choices = new Choices('[data-trigger]',
+      {
+        searchEnabled: false,
+        itemSelectText: '',
+      });
+
+    </script>
+
+
+
+<footer class="footer-bottom">
+  <div class="copyright">
+   
+    <p>copyright &copy;2022 UniMak <a href="https://outlook.live.com/mail/0/deeplink/compose/?mailtouri=mailto:info@unimak.edu.sl">info@unimak.edu.sl</a>  </p>
+    <div class="footer-menu">
+      <p>
+        <a href="https://unimak.edu.sl/" target="_blank" style="color: rgba(255, 255, 255, 0.966)">University of Makeni</a>
+         </p>
+     </div>
+
+    
+  </div>
+</footer>
+
+  </body>
+</html>

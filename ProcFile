@@ -1,0 +1,1 @@
+web: gunicorn graduationChecker.wsgi:application --log-file -
