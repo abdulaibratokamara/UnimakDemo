@@ -1,1 +1,1 @@
-web: gunicorn graduationChecker.wsgi:application --log-file -
+web: gunicorn graduationChecker.wsgi --log-file -
